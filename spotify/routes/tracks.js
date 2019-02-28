@@ -22,13 +22,13 @@ spotifyApi.clientCredentialsGrant()
 router.get('/:id', async (req, res, next) => {
   const id = req.params.id;
   try {
-    const albumArray = await spotifyApi.getArtistAlbums(id);
-    console.log(albumArray);
-    if (albumArray.statusCode >= 400 && albumArray.statusCode < 500) {
+    const tracksArray = await spotifyApi.getAlbumTracks(id);
+    console.log(tracksArray.body.items);
+    if (tracksArray.statusCode >= 400 && tracksArray.statusCode < 500) {
       next();
       return;
     }
-    res.render('albums', { albums: albumArray.body.items });
+    res.render('tracks', { albums: tracksArray.body.items });
   } catch (error) {
     next(error);
   }
