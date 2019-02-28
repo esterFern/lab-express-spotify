@@ -28,7 +28,7 @@ router.get('/:id', async (req, res, next) => {
       next();
       return;
     }
-    res.render('tracks', { albums: tracksArray.body.items });
+    res.render('tracks', { tracks: tracksArray.body.items });
   } catch (error) {
     next(error);
   }
