@@ -133,3 +133,36 @@ ul{
   justify-content: center;
 }
 
+.tracks-section h1{
+  text-align: center;
+ 
+}
+
+.head-table{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(93, 79, 79);
+  padding: 0 30px;
+  margin: 0;
+}
+
+.track{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid rgb(224, 201, 201);
+  background-color: rgb(240, 239, 248);
+  padding: 0 30px;
+  color: black;
+}
+
+.track p, .track audio{
+  align-self: center;
+}
+
+
+.tracks-section ul{
+  margin: 0;
+}
+

@@ -1,9 +1,17 @@
+
+<section class="tracks-section">
 <h1>Tracks</h1>
+
+<div class="head-table">
+<h3>Title</h3>
+<h3>Listen</h3>
+</div>
 <ul>
   {{#each tracks}}
-  <li>
+  <li class="track">
     <p>{{this.name}}</p>
     <audio src="{{this.preview_url}}" controls>
   </li>
   {{/each}}
 </ul>
+</section>
