@@ -1,10 +1,39 @@
+html {
+  box-sizing: border-box;
+  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  color: white;
+}
+
+button{
+  border: none;
+  background-color: rgb(226, 103, 103);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px 0;
+  width: 50%;
+  justify-self: center;
+  
 }
 
 a {
-  color: #00B7FF;
+  background-color: rgb(226, 103, 103);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+ 
 }
 
 
@@ -12,3 +41,95 @@ img{
   width: 200px;
   height: auto;
 }
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.search{
+  margin-top: 100px;
+  display: grid;
+  justify-content: center;
+  background-color: rgba(146, 88, 88, 0.5);
+  width: 50%;
+  height: 200px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+form input{
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+}
+
+
+.button-search{
+  display: flex;
+  justify-content: center;
+}
+
+.search h1{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  align-self: center;
+}
+
+.search h3{
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  align-self: center;
+}
+
+
+ul{
+  list-style-type: none;
+  padding:0;
+}
+
+.artist, .album{
+
+  background-color: rgb(61, 57, 57);
+  margin: 20px;
+  padding-bottom: 5px;
+  width: 200px;
+
+}
+
+.artist div, .album div{
+  display: flex;
+  justify-content: center;
+}
+
+.artist p, .album p{
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.artists-section, .albums-section{
+  background-color: rgba(146, 88, 88, 0.5);
+  width: 75%;
+}
+
+.artists-section h1, .albums-section h1{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.artists-section ul, .albums-section ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

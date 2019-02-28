@@ -1,11 +1,14 @@
-<h1>Albums</h1>
+<section class="albums-section">
+  <h1>Albums</h1>
 
-<ul>
-  {{#each albums}}
-  <li>
-    <img src="{{this.images.0.url}}" alt="{{this.name}}">
-    <p>{{this.name}}</p>
-    <a href="/tracks/{{this.id}}">View Albums</a>
-  </li>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each albums}}
+    <li class="album">
+      <img src="{{this.images.0.url}}" alt="{{this.name}}">
+      <p>{{this.name}}</p>
+      <div><a href="/tracks/{{this.id}}">View Albums</a></div>
+    </li>
+    {{/each}}
+  </ul>
+
+</section>

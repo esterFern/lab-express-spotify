@@ -1,10 +1,13 @@
-<h1>Results</h1>
+<section class="artists-section">
+
+<h1>Artists</h1>
 <ul>
   {{#each artist}}
-  <li>
+  <li class="artist">
     <img src="{{this.images.0.url}}" alt="{{this.name}}">
     <p>{{this.name}}</p>
-    <a href="/albums/{{this.id}}">View Albums</a>
+    <div><a href="/albums/{{this.id}}">View Albums</a><div>
   </li>
   {{/each}}
 </ul>
+</section>
